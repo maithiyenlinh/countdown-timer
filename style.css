@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Lora', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    background: center / cover no-repeat url('background-image.jpeg');
+    min-height: 100vh;
+    
+}
+/* https://maithiyenlinh.github.io/countdown-timer */
+
+#main {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 20vh;
+    display: flex;
+    flex-direction: column;  
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 4rem;
+    padding-bottom: 20vh;
+}
+
+.countdown-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    text-align: center;
+}
+
+.big-text {
+    font-size: 6rem;
+}
+
+.big-text + span {
+    font-size: 1rem;
+}
+
+.big-text, h1,
+.big-text + span {
+    background: #a770ef;
+    background: linear-gradient(to bottom, #a770ef, #cf8bf3, #fdb99b);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+@media (max-width: 46.1875em) {
+    #main {
+        padding-top: 5vh;
+    }
+
+    h1 {
+        padding-bottom: 5vh;
+    }
+
+    h1, .big-text {
+        font-size: 3rem;
+    }
+
+    .big-text + span {
+        font-size: 1rem;
+    }
+    
+    .big-text, h1,
+    .big-text + span{
+        background: #ed213a;
+        background: linear-gradient(to bottom, #ed213a, #93291e);
+        background-size: 100%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+    }
+}
+
